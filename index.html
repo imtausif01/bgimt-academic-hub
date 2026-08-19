@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BGIMT Academic Hub - Syllabus, PYQs, study resources, YouTube channels, university links and useful AI tools for students.">
+  <title>BGIMT Academic Hub</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="brand" href="#home" aria-label="BGIMT Academic Hub Home">
+    <img src="assets/images/bgmit-logo.png" alt="BGIMT Logo">
+  </a>
+
+  <nav aria-label="Main navigation">
+    <a href="#home">🏠 Home</a>
+    <a href="#courses">🎓 Courses</a>
+    <a href="#resources">🧰 Resources</a>
+    <a href="#youtube">▶️ YouTube</a>
+    <a href="#ai">🤖 AI Tools</a>
+    <a href="#notices">📢 Notices</a>
+    <a href="#contact">💬 Contact</a>
+  </nav>
+
+  <a class="google-btn" href="https://www.google.com/" target="_blank" rel="noopener">🔎 Google</a>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="eyebrow">BGIMT • STUDENT ACADEMIC HUB</span>
+    <h1>Your college study<br><em>one-stop hub.</em></h1>
+    <p>Syllabus, PYQs, study resources, YouTube lectures, university links, AI tools and more, all in one simple place.</p>
+
+    <div class="hero-actions">
+      <a class="btn primary" href="#courses">Explore Courses →</a>
+      <a class="btn glass" href="#resources">Study Resources</a>
+    </div>
+
+    <div class="google-search">
+      <span>🔎</span>
+      <input id="googleQuery" type="search" placeholder="Google par search karo...">
+      <button onclick="googleSearch()">Search</button>
+    </div>
+  </div>
+</section>
+
+<section class="quick-bar">
+  <a href="#courses"><b>🎓 5</b><small>Courses</small></a>
+  <a href="#resources"><b>📋 Syllabus</b><small>Official source</small></a>
+  <a href="#resources"><b>📄 PYQs</b><small>2 useful sites</small></a>
+  <a href="#youtube"><b>▶️ YouTube</b><small>Course-wise channels</small></a>
+  <a href="#ai"><b>🤖 AI Tools</b><small>ChatGPT + Gemini</small></a>
+</section>
+
+<section class="section" id="courses">
+  <div class="heading">
+    <span>🎓 APNI PADHAI</span>
+    <h2>Choose Your Course</h2>
+    <p>Har course ke liye same simple system: syllabus, PYQ, resources aur useful channels.</p>
+  </div>
+
+  <div class="course-grid">
+    <a class="course-card" href="#bca">
+      <div class="course-icon">💻</div><h3>BCA</h3>
+      <p>Bachelor of Computer Applications</p><span>Study Hub →</span>
+    </a>
+    <a class="course-card" href="#bba">
+      <div class="course-icon">📈</div><h3>BBA</h3>
+      <p>Bachelor of Business Administration</p><span>Study Hub →</span>
+    </a>
+    <a class="course-card" href="#bcom">
+      <div class="course-icon">📊</div><h3>B.Com</h3>
+      <p>Bachelor of Commerce</p><span>Study Hub →</span>
+    </a>
+    <a class="course-card" href="#mca">
+      <div class="course-icon">🖥️</div><h3>MCA</h3>
+      <p>Master of Computer Applications</p><span>Study Hub →</span>
+    </a>
+    <a class="course-card" href="#mba">
+      <div class="course-icon">🎯</div><h3>MBA</h3>
+      <p>Master of Business Administration</p><span>Study Hub →</span>
+    </a>
+  </div>
+</section>
+
+<section class="section light" id="resources">
+  <div class="heading">
+    <span>🧰 JUGAAD</span>
+    <h2>Useful Academic Links</h2>
+    <p>Hum files store nahi kar rahe. Original websites/resources par direct le ja rahe hain.</p>
+  </div>
+
+  <div class="resource-grid">
+    <a class="resource-card" href="https://ptu.ac.in/syllabus/" target="_blank" rel="noopener">
+      <div class="r-icon blue">📋</div><div><h3>Official Syllabus</h3><p>IKGPTU syllabus</p></div><b>Open ↗</b>
+    </a>
+    <a class="resource-card" href="https://www.ptuexam.com/PublicAnnoucements" target="_blank" rel="noopener">
+      <div class="r-icon orange">📢</div><div><h3>University Notices</h3><p>PTU exam announcements</p></div><b>Open ↗</b>
+    </a>
+    <a class="resource-card" href="https://www.ptuexam.com/login" target="_blank" rel="noopener">
+      <div class="r-icon green">🎓</div><div><h3>Student Portal</h3><p>Result & student details</p></div><b>Open ↗</b>
+    </a>
+    <a class="resource-card" href="https://brpaper.com/ptu" target="_blank" rel="noopener">
+      <div class="r-icon red">📄</div><div><h3>BR Paper</h3><p>PTU previous year papers</p></div><b>Open ↗</b>
+    </a>
+    <a class="resource-card" href="https://www.ptustudy.com/" target="_blank" rel="noopener">
+      <div class="r-icon purple">📚</div><div><h3>PTU Study</h3><p>PYQs & study material</p></div><b>Open ↗</b>
+    </a>
+    <a class="resource-card" href="https://ptu.ac.in/" target="_blank" rel="noopener">
+      <div class="r-icon navy">🏛️</div><div><h3>IKGPTU Official</h3><p>University website</p></div><b>Open ↗</b>
+    </a>
+  </div>
+</section>
+
+<section class="section" id="youtube">
+  <div class="heading">
+    <span>▶️ VIDEO GURU</span>
+    <h2>Course-wise YouTube Help</h2>
+    <p>Channels are grouped by the subjects they are most useful for.</p>
+  </div>
+
+  <div class="course-resource" id="bca">
+    <div class="course-title"><span>💻</span><div><h3>BCA</h3><p>Coding, DSA, DBMS, OS, Web & Maths</p></div></div>
+    <div class="channel-grid">
+      <a href="https://youtube.com/@codewithharry?si=96NcTkObM0m4Szu2" target="_blank"><b>CodeWithHarry</b><small>C, C++, Python, Java, Web Development</small></a>
+      <a href="https://youtube.com/@apnacollegeofficial?si=1Ma4qN-Szg6c-r2M" target="_blank"><b>Apna College</b><small>DSA, C++, Java, placement preparation</small></a>
+      <a href="https://youtube.com/@gatesmashers?si=c9ING7g81bsQWOu_" target="_blank"><b>Gate Smashers</b><small>DBMS, OS, CN, SE, core CS</small></a>
+      <a href="https://youtube.com/@knowledgegate_kg?si=EOiOZSN6_hyGVb3-" target="_blank"><b>Knowledge Gate</b><small>Core CS & university subjects</small></a>
+      <a href="https://youtube.com/@dreammaths?si=AVHxENarBY9CdzO6" target="_blank"><b>Dream Maths</b><small>College mathematics</small></a>
+      <a href="https://youtube.com/@gajendrapurohit?si=YFEjTRBm_plimCok" target="_blank"><b>Dr. Gajendra Purohit</b><small>Mathematics & exam preparation</small></a>
+    </div>
+  </div>
+
+  <div class="course-resource" id="mca">
+    <div class="course-title"><span>🖥️</span><div><h3>MCA</h3><p>Programming, DSA, core CS, maths & placement</p></div></div>
+    <div class="channel-grid">
+      <a href="https://youtube.com/@codewithharry?si=96NcTkObM0m4Szu2" target="_blank"><b>CodeWithHarry</b><small>Programming & development</small></a>
+      <a href="https://youtube.com/@apnacollegeofficial?si=1Ma4qN-Szg6c-r2M" target="_blank"><b>Apna College</b><small>DSA & placement preparation</small></a>
+      <a href="https://youtube.com/@gatesmashers?si=c9ING7g81bsQWOu_" target="_blank"><b>Gate Smashers</b><small>Core CS subjects</small></a>
+      <a href="https://youtube.com/@knowledgegate_kg?si=EOiOZSN6_hyGVb3-" target="_blank"><b>Knowledge Gate</b><small>CS & exam-oriented study</small></a>
+      <a href="https://youtube.com/@dreammaths?si=AVHxENarBY9CdzO6" target="_blank"><b>Dream Maths</b><small>Mathematics</small></a>
+      <a href="https://youtube.com/@gajendrapurohit?si=YFEjTRBm_plimCok" target="_blank"><b>Dr. Gajendra Purohit</b><small>Mathematics</small></a>
+    </div>
+  </div>
+
+  <div class="course-resource" id="bba">
+    <div class="course-title"><span>📈</span><div><h3>BBA</h3><p>Management, business, accounts, economics & maths</p></div></div>
+    <div class="channel-grid">
+      <a href="https://youtube.com/@apnacollegeofficial?si=1Ma4qN-Szg6c-r2M" target="_blank"><b>Apna College</b><small>Career & selected fundamentals</small></a>
+      <a href="https://youtube.com/@dreammaths?si=AVHxENarBY9CdzO6" target="_blank"><b>Dream Maths</b><small>Business/college mathematics</small></a>
+      <a href="https://youtube.com/@gajendrapurohit?si=YFEjTRBm_plimCok" target="_blank"><b>Dr. Gajendra Purohit</b><small>Mathematics & exam prep</small></a>
+      <a href="https://youtube.com/@RajatArora" target="_blank"><b>Rajat Arora</b><small>Business & commerce concepts</small></a>
+      <a href="https://youtube.com/@DWIVEDIGUIDANCE" target="_blank"><b>DWIVEDI GUIDANCE</b><small>Management subjects</small></a>
+    </div>
+  </div>
+
+  <div class="course-resource" id="bcom">
+    <div class="course-title"><span>📊</span><div><h3>B.Com</h3><p>Accounting, finance, economics, tax & business</p></div></div>
+    <div class="channel-grid">
+      <a href="https://youtube.com/@AccountingMasterClass" target="_blank"><b>Accounting MasterClass</b><small>Accounting, finance & commerce</small></a>
+      <a href="https://youtube.com/@CWGforBCom" target="_blank"><b>CWG for BCom</b><small>Commerce & taxation</small></a>
+      <a href="https://youtube.com/@RajatArora" target="_blank"><b>Rajat Arora</b><small>Business & commerce</small></a>
+      <a href="https://youtube.com/@dreammaths?si=AVHxENarBY9CdzO6" target="_blank"><b>Dream Maths</b><small>Mathematics</small></a>
+    </div>
+  </div>
+
+  <div class="course-resource" id="mba">
+    <div class="course-title"><span>🎯</span><div><h3>MBA</h3><p>Management, HR, marketing, finance & business</p></div></div>
+    <div class="channel-grid">
+      <a href="https://youtube.com/@DWIVEDIGUIDANCE" target="_blank"><b>DWIVEDI GUIDANCE</b><small>Management & HR subjects</small></a>
+      <a href="https://youtube.com/@AccountingMasterClass" target="_blank"><b>Accounting MasterClass</b><small>Finance & accounting</small></a>
+      <a href="https://youtube.com/@RajatArora" target="_blank"><b>Rajat Arora</b><small>Business & management basics</small></a>
+      <a href="https://youtube.com/@dreammaths?si=AVHxENarBY9CdzO6" target="_blank"><b>Dream Maths</b><small>Quantitative topics</small></a>
+    </div>
+  </div>
+</section>
+
+<section class="section light" id="ai">
+  <div class="heading">
+    <span>🤖 AI DOST</span>
+    <h2>Study Tools</h2>
+    <p>Use AI for explanations, ideas, practice and study support. Verify academic answers before submitting.</p>
+  </div>
+  <div class="ai-grid">
+    <a href="https://chatgpt.com/" target="_blank"><span>🤖</span><div><h3>ChatGPT</h3><p>Ask, explain, summarize, practice</p></div><b>Open ↗</b></a>
+    <a href="https://gemini.google.com/" target="_blank"><span>✨</span><div><h3>Google Gemini</h3><p>AI study & research assistant</p></div><b>Open ↗</b></a>
+  </div>
+</section>
+
+<section class="section" id="notices">
+  <div class="heading"><span>📢 KHABRI</span><h2>Official Student Links</h2><p>For current notices, results and university information, use the official portals.</p></div>
+  <div class="notice-grid">
+    <a href="https://www.ptuexam.com/PublicAnnoucements" target="_blank"><b>📢 PTU Announcements</b><small>Official exam/public announcements</small></a>
+    <a href="https://www.ptuexam.com/login" target="_blank"><b>🎓 Student Login</b><small>Result and student details</small></a>
+    <a href="https://ptu.ac.in/syllabus/" target="_blank"><b>📋 Syllabus</b><small>Official IKGPTU syllabus</small></a>
+    <a href="https://ptu.ac.in/" target="_blank"><b>🏛️ University Website</b><small>Official IKGPTU website</small></a>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div>
+      <span>💬 DOUBT BOX</span>
+      <h2>Have a question or doubt?</h2>
+      <p>This static website cannot send messages directly to a private server. For now, Telegram is the fastest contact option. A proper contact form can be connected later with a backend.</p>
+      <a class="telegram" href="https://t.me/imtausif_01" target="_blank">✈️ Message Tausif on Telegram</a>
+    </div>
+    <div class="contact-card">
+      <h3>Made by</h3>
+      <strong>Tausif Ahmad</strong>
+      <p>BCA • 2nd Year</p>
+      <p>Batch: 2025–28</p>
+      <a href="https://t.me/imtausif_01" target="_blank">Telegram: @imtausif_01</a>
+    </div>
+  </div>
+</section>
+
+<section class="credit">
+  <span>❤️ MADE FOR STUDENTS</span>
+  <h2>Study smart. Find less. Learn more.</h2>
+  <p>BGIMT Academic Hub is a resource directory. External resources belong to their respective websites and channels.</p>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div><img src="assets/images/bgmit-logo.png" alt="BGIMT Logo"><p>BGIMT Academic Hub</p><small>A simple academic resource directory for students.</small></div>
+    <div><h4>Navigation</h4><a href="#home">Home</a><a href="#courses">Courses</a><a href="#resources">Resources</a><a href="#youtube">YouTube</a></div>
+    <div><h4>Useful</h4><a href="#ai">AI Tools</a><a href="#notices">Notices</a><a href="#contact">Contact</a><a href="https://www.google.com/" target="_blank">Google</a></div>
+    <div><h4>Creator</h4><p>Tausif Ahmad</p><p>BCA 2nd Year</p><a href="https://t.me/imtausif_01" target="_blank">Telegram ↗</a></div>
+  </div>
+  <div class="copyright">© 2026 BGIMT Academic Hub • Made by Tausif Ahmad</div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
