@@ -427,3 +427,306 @@ footer{background:#0e1c34;color:#dce3ef;padding:45px 6% 18px}.footer-grid{max-wi
   }
 
 }
+
+
+/* =========================================
+   PROFESSIONAL CONTACT FORM
+========================================= */
+
+.contact-form-card {
+  width: 100%;
+  border: 1px solid #e5eaf1;
+  box-shadow: 0 18px 45px rgba(5, 17, 36, 0.12);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.contact-form-card:hover {
+  transform: translateY(-3px);
+  border-color: #d7ddff;
+  box-shadow: 0 22px 50px rgba(5, 17, 36, 0.16);
+}
+
+.contact-form-card h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* Form group */
+
+.contact-form .form-group {
+  margin-bottom: 16px;
+}
+
+.contact-form label {
+  display: block;
+  color: #344054;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+
+/* Inputs */
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid #dfe4ec;
+  background: #f9fafc;
+  color: #14233f;
+
+  border-radius: 9px;
+
+  padding: 12px 13px;
+
+  font-family: inherit;
+  font-size: 13px;
+
+  outline: none;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease,
+    transform 0.2s ease;
+}
+
+
+/* Input hover */
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-color: #bcc6d8;
+  background: #ffffff;
+}
+
+
+/* Input focus */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #5368ee;
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 3px rgba(83, 104, 238, 0.10);
+}
+
+
+/* Textarea */
+
+.contact-form textarea {
+  min-height: 125px;
+  resize: vertical;
+}
+
+
+/* Placeholder */
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #9aa4b2;
+}
+
+
+/* =========================================
+   SEND BUTTON
+========================================= */
+
+.contact-submit {
+  width: 100%;
+
+  border: 1px solid #5368ee;
+
+  background: #5368ee;
+  color: #ffffff;
+
+  padding: 12px 18px;
+
+  border-radius: 9px;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+/* Button hover */
+
+.contact-submit:hover {
+  background: #465bdd;
+  border-color: #465bdd;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 9px 22px rgba(83, 104, 238, 0.24);
+}
+
+
+/* Button arrow */
+
+.contact-submit span {
+  color: #ffffff;
+  font-size: 16px;
+
+  transition: transform 0.2s ease;
+}
+
+.contact-submit:hover span {
+  transform: translateX(4px);
+}
+
+
+/* Button click */
+
+.contact-submit:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+
+/* =========================================
+   CONTACT INFO SIDE
+========================================= */
+
+.contact-info {
+  animation: contactFadeUp 0.7s ease both;
+}
+
+.contact-form-card {
+  animation: contactFadeUp 0.7s ease 0.1s both;
+}
+
+@keyframes contactFadeUp {
+
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+/* Small info box */
+
+.contact-note {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-top: 22px;
+
+  max-width: 500px;
+
+  padding: 14px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.contact-note:hover {
+  border-color: rgba(83, 104, 238, 0.5);
+
+  background: rgba(83, 104, 238, 0.08);
+
+  transform: translateX(3px);
+}
+
+.contact-note > span {
+  font-size: 18px;
+  flex: none;
+}
+
+.contact-note p {
+  margin: 0;
+}
+
+
+/* =========================================
+   MOBILE CONTACT FORM
+========================================= */
+
+@media (max-width: 650px) {
+
+  .contact-form-card {
+    padding: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .contact-submit {
+    padding: 13px 16px;
+  }
+
+  .contact-note {
+    padding: 13px;
+  }
+
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible,
+.contact-submit:focus-visible {
+  outline: 2px solid rgba(83, 104, 238, 0.35);
+  outline-offset: 2px;
+}
+
+
+/* Reduce animation for users who prefer less motion */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .contact-info,
+  .contact-form-card {
+    animation: none;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-submit,
+  .contact-note {
+    transition: none;
+  }
+
+}

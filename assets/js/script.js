@@ -140,3 +140,126 @@ document.addEventListener(
 
   }
 );
+
+/* =========================================
+   CONTACT FORM - FORMSPREE
+========================================= */
+
+const contactForm = document.querySelector(".contact-form");
+
+if (contactForm) {
+
+  const submitButton =
+    contactForm.querySelector(".contact-submit");
+
+  const originalButtonHTML =
+    submitButton.innerHTML;
+
+
+  contactForm.addEventListener("submit", async function (event) {
+
+    event.preventDefault();
+
+
+    /* Loading state */
+
+    submitButton.disabled = true;
+
+    submitButton.innerHTML =
+      '<span>Sending...</span>';
+
+
+    try {
+
+      const formData =
+        new FormData(contactForm);
+
+
+      const response =
+        await fetch(contactForm.action, {
+
+          method: "POST",
+
+          body: formData,
+
+          headers: {
+            "Accept": "application/json"
+          }
+
+        });
+
+
+      if (response.ok) {
+
+        submitButton.innerHTML =
+          '<span>✓ Message Sent</span>';
+
+        submitButton.style.background =
+          "#198754";
+
+        submitButton.style.borderColor =
+          "#198754";
+
+
+        contactForm.reset();
+
+
+        setTimeout(() => {
+
+          submitButton.innerHTML =
+            originalButtonHTML;
+
+          submitButton.style.background =
+            "";
+
+          submitButton.style.borderColor =
+            "";
+
+          submitButton.disabled =
+            false;
+
+        }, 3000);
+
+
+      } else {
+
+        throw new Error(
+          "Form submission failed"
+        );
+
+      }
+
+
+    } catch (error) {
+
+      submitButton.innerHTML =
+        '<span>Try Again</span>';
+
+      submitButton.style.background =
+        "#dc3545";
+
+      submitButton.style.borderColor =
+        "#dc3545";
+
+
+      setTimeout(() => {
+
+        submitButton.innerHTML =
+          originalButtonHTML;
+
+        submitButton.style.background =
+          "";
+
+        submitButton.style.borderColor =
+          "";
+
+        submitButton.disabled =
+          false;
+
+      }, 3000);
+
+    }
+
+  });
+
+}
