@@ -1,5 +1,5 @@
 *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,Arial,sans-serif;color:#14233f;background:#f7f9fc;line-height:1.5}a{text-decoration:none;color:inherit}
-.navbar{height:78px;background:#fff;border-bottom:1px solid #e6ebf2;display:flex;align-items:center;justify-content:space-between;padding:0 4%;position:sticky;top:0;z-index:50}.brand img{width:205px;height:auto;display:block}.navbar nav{display:flex;gap:19px;align-items:center}.navbar nav a{font-size:13px;color:#5e6a7e;white-space:nowrap}.navbar nav a:hover{color:#5368ee}.google-btn{background:#14233f;color:#fff;padding:10px 14px;border-radius:9px;font-size:13px}
+.navbar{height:78px;background:#fff;border-bottom:1px solid #e6ebf2;display:flex;align-items:center;justify-content:space-between;padding:0 4%;position:sticky;top:0;z-index:50}.brand img{width:205px;height:auto;display:block}.navbar nav{display:flex;gap:19px;align-items:center}.navbar nav a{font-size:13px;color:#14233f;white-space:nowrap}.navbar nav a:hover{border:2px solid #14233f ;border-radius:25px; padding:2px;}.google-btn{background:#14233f;color:#fff;padding:10px 14px;border-radius:9px;font-size:13px}
 .hero{min-height:610px;position:relative;background:url("../images/college-campus.jpg") center/cover;display:flex;align-items:center}.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,17,36,.88),rgba(5,17,36,.55),rgba(5,17,36,.18))}.hero-content{position:relative;max-width:1180px;width:100%;margin:auto;padding:70px 28px;color:#fff}.eyebrow,.heading>span,.admin-box span,.contact span,.credit>span{font-size:11px;letter-spacing:1.7px;font-weight:800;color:#5368ee}.hero .eyebrow{color:#e2e8ff}.hero h1{font-size:57px;line-height:1.05;max-width:720px;margin:17px 0}.hero h1 em{font-style:normal;color:#9ba9ff}.hero p{max-width:660px;font-size:17px;color:#e0e6ef;line-height:1.7;margin-bottom:25px}.hero-actions{display:flex;gap:10px;margin-bottom:20px}.btn{padding:12px 18px;border-radius:9px;font-size:13px;font-weight:700}.primary{background:#5368ee;color:#fff}.glass{border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.1);color:#fff}.google-search{display:flex;max-width:650px;background:#fff;border-radius:11px;padding:6px;color:#667085}.google-search span{display:grid;place-items:center;width:38px}.google-search input{flex:1;border:0;outline:0;padding:12px;font-size:14px}.google-search button{border:0;background:#14233f;color:#fff;border-radius:8px;padding:0 21px;font-weight:700;cursor:pointer}
 .quick-bar{max-width:1050px;margin:-42px auto 0;position:relative;background:#fff;border:1px solid #e5eaf1;border-radius:15px;box-shadow:0 14px 35px #18243a12;display:grid;grid-template-columns:repeat(5,1fr);padding:18px}.quick-bar a{text-align:center;border-right:1px solid #edf0f5}.quick-bar a:last-child{border:0}.quick-bar b,.quick-bar small{display:block}.quick-bar b{font-size:15px}.quick-bar small{font-size:11px;color:#7c8798;margin-top:3px}
 .section{max-width:1200px;margin:auto;padding:72px 25px}.light{max-width:none;background:#eef2f7}.light>.heading,.light>.resource-grid,.light>.ai-grid{max-width:1130px;margin-left:auto;margin-right:auto}.heading{text-align:center;margin-bottom:35px}.heading h2{font-size:35px;margin:7px 0}.heading p{color:#7a8596}.course-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.course-card{background:#fff;border:1px solid #e4e9f0;border-radius:15px;padding:24px;transition:.2s}.course-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px #17233a12}.course-icon{font-size:29px}.course-card h3{margin:13px 0 5px}.course-card p{font-size:12px;color:#7a8596;min-height:40px}.course-card span{display:block;color:#5368ee;font-size:12px;font-weight:700;margin-top:13px}
@@ -12,3 +12,418 @@
 footer{background:#0e1c34;color:#dce3ef;padding:45px 6% 18px}.footer-grid{max-width:1130px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:35px}.footer-grid img{width:205px;background:#fff;border-radius:6px;padding:3px}.footer-grid p,.footer-grid small,.footer-grid a{display:block;color:#aeb8c8;font-size:12px;margin-top:7px}.footer-grid h4{color:#fff;margin-bottom:8px}.footer-grid a:hover{color:#fff}.copyright{max-width:1130px;margin:30px auto 0;border-top:1px solid #2d3a51;padding-top:15px;text-align:center;color:#8c97a8;font-size:11px}
 @media(max-width:1000px){.navbar nav{display:none}.course-grid{grid-template-columns:repeat(3,1fr)}.channel-grid{grid-template-columns:repeat(2,1fr)}.resource-grid{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:47px}}
 @media(max-width:650px){.navbar{padding:0 15px}.brand img{width:160px}.google-btn{display:none}.hero{min-height:640px}.hero-content{padding:50px 20px}.hero h1{font-size:37px}.hero p{font-size:15px}.hero-actions{flex-direction:column;max-width:230px}.google-search{display:block}.google-search input{width:100%}.google-search button{width:100%;padding:11px;margin-top:5px}.quick-bar{margin:0 15px;grid-template-columns:repeat(2,1fr);gap:14px}.quick-bar a{border:0}.course-grid,.resource-grid,.channel-grid,.ai-grid,.notice-grid,.footer-grid,.contact-inner{grid-template-columns:1fr}.section{padding:55px 18px}.contact{padding:50px 18px}}
+
+/* Scroll Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.reveal-delay-3 {
+  transition-delay: 0.3s;
+}
+
+.reveal-delay-4 {
+  transition-delay: 0.4s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+
+/* =========================================
+   AESTHETIC HOVER EFFECTS
+========================================= */
+
+.course-card,
+.resource-card,
+.course-resource,
+.channel-grid a,
+.ai-grid a,
+.notice-grid a,
+.essential-grid a {
+  position: relative;
+  border: 1px solid #e4e9f0;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.course-card:hover,
+.resource-card:hover,
+.course-resource:hover,
+.channel-grid a:hover,
+.ai-grid a:hover,
+.notice-grid a:hover,
+.essential-grid a:hover {
+  transform: translateY(-5px);
+  border-color: #5368ee;
+  box-shadow:
+    0 12px 30px rgba(83, 104, 238, 0.12);
+}
+
+
+/* Small animated border glow */
+
+.course-card::before,
+.resource-card::before,
+.channel-grid a::before,
+.ai-grid a::before,
+.notice-grid a::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  border: 1px solid transparent;
+  pointer-events: none;
+  transition: border-color 0.25s ease;
+}
+
+.course-card:hover::before,
+.resource-card:hover::before,
+.channel-grid a:hover::before,
+.ai-grid a:hover::before,
+.notice-grid a:hover::before {
+  border-color: rgba(83, 104, 238, 0.35);
+}
+
+
+/* =========================================
+   DESKTOP NAV HOVER
+========================================= */
+
+.desktop-nav a {
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.desktop-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+
+  width: 0;
+  height: 2px;
+
+  background: #5368ee;
+  border-radius: 10px;
+
+  transition: width 0.25s ease;
+}
+
+.desktop-nav a:hover {
+  color: #5368ee;
+}
+
+.desktop-nav a:hover::after {
+  width: 100%;
+}
+
+
+/* Google button */
+
+.google-btn {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.google-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(20, 35, 63, 0.18);
+}
+
+
+/* =========================================
+   MOBILE MENU BUTTON
+========================================= */
+
+.menu-btn {
+  display: none;
+
+  width: 43px;
+  height: 43px;
+
+  border: 1px solid #e2e7ee;
+  background: #ffffff;
+
+  border-radius: 11px;
+
+  cursor: pointer;
+
+  padding: 9px;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.2s ease;
+}
+
+.menu-btn:hover {
+  border-color: #5368ee;
+  box-shadow: 0 7px 18px rgba(83, 104, 238, 0.14);
+  transform: translateY(-2px);
+}
+
+.menu-btn span {
+  display: block;
+
+  width: 22px;
+  height: 2px;
+
+  margin: 4px auto;
+
+  background: #14233f;
+
+  border-radius: 5px;
+
+  transition: 0.25s ease;
+}
+
+
+/* =========================================
+   MOBILE SIDE DRAWER
+========================================= */
+
+.drawer-overlay {
+  display: none;
+
+  position: fixed;
+  inset: 0;
+
+  background: rgba(7, 18, 36, 0.45);
+
+  backdrop-filter: blur(3px);
+
+  z-index: 80;
+}
+
+.drawer-overlay.open {
+  display: block;
+}
+
+
+.mobile-drawer {
+  position: fixed;
+
+  top: 0;
+  right: -320px;
+
+  width: 290px;
+  max-width: 84vw;
+
+  height: 100vh;
+
+  background: #ffffff;
+
+  z-index: 90;
+
+  box-shadow:
+    -15px 0 35px rgba(15, 30, 55, 0.18);
+
+  transition: right 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-drawer.open {
+  right: 0;
+}
+
+
+/* Drawer header */
+
+.drawer-head {
+  min-height: 82px;
+
+  padding: 15px 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #e7ebf1;
+}
+
+.drawer-head img {
+  width: 165px;
+  max-width: 70%;
+}
+
+
+.drawer-close {
+  width: 38px;
+  height: 38px;
+
+  border: 1px solid #e2e7ee;
+
+  border-radius: 10px;
+
+  background: #f7f9fc;
+
+  color: #14233f;
+
+  font-size: 26px;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.drawer-close:hover {
+  border-color: #5368ee;
+  background: #eef1ff;
+  transform: rotate(4deg);
+}
+
+
+/* Drawer links */
+
+.drawer-links {
+  padding: 18px 14px;
+
+  overflow-y: auto;
+}
+
+.drawer-links a {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  padding: 14px 12px;
+
+  margin-bottom: 6px;
+
+  border: 1px solid transparent;
+
+  border-radius: 11px;
+
+  color: #4f5c70;
+
+  font-size: 14px;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.drawer-links a:hover {
+  color: #5368ee;
+
+  background: #f5f6ff;
+
+  border-color: #dce1ff;
+
+  transform: translateX(4px);
+}
+
+
+/* Google inside drawer */
+
+.drawer-google {
+  margin-top: 12px;
+
+  background: #14233f !important;
+
+  color: #ffffff !important;
+
+  border-color: #14233f !important;
+}
+
+.drawer-google:hover {
+  background: #5368ee !important;
+
+  border-color: #5368ee !important;
+
+  transform: translateX(0) !important;
+}
+
+
+/* Drawer footer */
+
+.drawer-footer {
+  margin-top: auto;
+
+  padding: 18px;
+
+  border-top: 1px solid #e7ebf1;
+}
+
+.drawer-footer small {
+  display: block;
+
+  color: #8a94a4;
+
+  font-size: 11px;
+
+  margin-top: 4px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .desktop-nav,
+  .desktop-google {
+    display: none !important;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE TOUCH DEVICES
+========================================= */
+
+@media (hover: none) {
+
+  .course-card:hover,
+  .resource-card:hover,
+  .channel-grid a:hover,
+  .ai-grid a:hover,
+  .notice-grid a:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .drawer-links a:active {
+    background: #eef1ff;
+    border-color: #dce1ff;
+  }
+
+}
