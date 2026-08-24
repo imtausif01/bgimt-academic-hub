@@ -1,0 +1,658 @@
+/* =========================================================
+   COURSES PAGE CSS
+   File: courses.css
+   Course page-specific styles only.
+========================================================= */
+
+/* Course cards */
+.courses-page .course-card {
+  min-height: 205px;
+}
+
+/* Study-flow cards */
+.courses-page .quick-grid .card {
+  min-height: 150px;
+}
+/* Website logo */
+.site-logo {
+    width: 200px;
+    height: 50px;
+    object-fit: contain;
+    display: block;
+}
+
+
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+.site-footer {
+    background: #071d33;
+    color: #ffffff;
+
+    border-top: 1px solid rgba(72, 183, 255, 0.15);
+
+    margin-top: 40px;
+}
+
+
+/* =====================================================
+   FOOTER CONTAINER
+   ===================================================== */
+
+.footer-container {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 28px 28px 22px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.6fr
+        1fr
+        1fr
+        1.2fr;
+
+    gap: 38px;
+
+    align-items: start;
+}
+
+
+/* =====================================================
+   FOOTER BRAND
+   ===================================================== */
+
+.footer-brand {
+    max-width: 300px;
+}
+
+.footer-brand h3 {
+    margin: 0 0 7px;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+.footer-brand p {
+    margin: 0;
+
+    max-width: 290px;
+
+    font-size: 12px;
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.68);
+}
+
+
+/* =====================================================
+   FOOTER COLUMNS
+   ===================================================== */
+
+.footer-column h4 {
+    margin: 0 0 13px;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   FOOTER LINKS
+   ===================================================== */
+
+.footer-column > a {
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 8px;
+
+    color: rgba(255, 255, 255, 0.68);
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.footer-column > a i {
+    width: 15px;
+
+    text-align: center;
+
+    color: #4db8ff;
+
+    font-size: 11px;
+}
+
+.footer-column > a:hover {
+    color: #ffffff;
+
+    transform: translateX(3px);
+}
+
+.footer-column > a:hover i {
+    color: #72d0ff;
+}
+
+
+/* =====================================================
+   PROJECT DESCRIPTION
+   ===================================================== */
+
+.footer-project > p {
+    margin: 0 0 12px;
+
+    max-width: 220px;
+
+    font-size: 11px;
+
+    line-height: 1.55;
+
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+/* =====================================================
+   GITHUB SOURCE BUTTON
+   ===================================================== */
+
+.github-button {
+    max-width: 215px;
+
+    display: flex !important;
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 8px 10px;
+
+    margin-bottom: 13px !important;
+
+    border: 1px solid rgba(91, 193, 255, 0.25);
+
+    border-radius: 9px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    color: #ffffff !important;
+
+    transform: none !important;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.github-button:hover {
+    background: rgba(77, 184, 255, 0.10);
+
+    border-color: rgba(91, 193, 255, 0.45);
+}
+
+.github-icon {
+    width: auto !important;
+
+    color: #ffffff !important;
+
+    font-size: 18px !important;
+}
+
+.github-button span {
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+
+    font-size: 11px;
+
+    color: #ffffff;
+}
+
+.github-button span small {
+    font-size: 8px;
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.github-button > i:last-child {
+    width: auto !important;
+
+    font-size: 9px !important;
+
+    color: rgba(255, 255, 255, 0.65) !important;
+}
+
+
+/* =====================================================
+   CREATOR
+   ===================================================== */
+
+.creator-info {
+    padding-left: 9px;
+
+    margin: 0 0 10px;
+
+    border-left: 2px solid #45c5ff;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+.creator-info span {
+    font-size: 8px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+    color: rgba(255, 255, 255, 0.48);
+}
+
+.creator-info strong {
+    font-size: 12px;
+
+    color: #ffffff;
+}
+
+.creator-info small {
+    font-size: 9px;
+
+    color: rgba(255, 255, 255, 0.55);
+}
+
+
+/* =====================================================
+   TELEGRAM
+   ===================================================== */
+
+.telegram-link {
+    margin-bottom: 0 !important;
+
+    color: #58c7ff !important;
+
+     font-size:15px;
+    text-decoration-line: none;
+}
+
+.telegram-link i {
+    color: #29a9ea !important;
+}
+
+
+/* =====================================================
+   FOOTER BOTTOM
+   ===================================================== */
+
+.footer-bottom {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 11px 28px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    font-size: 10px;
+
+    color: rgba(255, 255, 255, 0.48);
+}
+
+.footer-bottom span {
+    margin: 0 4px;
+
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.footer-bottom strong {
+    color: #53c7ff;
+}
+
+.footer-bottom i {
+    margin-left: 3px;
+
+    color: #ff5f73;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    .footer-container {
+        grid-template-columns: 1.4fr 1fr 1fr;
+
+        gap: 28px;
+    }
+
+    .footer-project {
+        grid-column: span 3;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+
+        padding: 24px 20px 18px;
+
+        gap: 25px 18px;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+
+        max-width: 100%;
+    }
+
+    .footer-brand p {
+        max-width: 100%;
+    }
+
+    .footer-project {
+        grid-column: span 2;
+    }
+
+    .footer-bottom {
+        padding: 10px 20px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 5px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+   ===================================================== */
+
+@media (max-width: 400px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand,
+    .footer-project {
+        grid-column: span 1;
+    }
+
+}
+
+/* =========================================
+   NAVBAR SEARCH
+   ========================================= */
+
+.navbar-search {
+    position: relative;
+
+    width: 220px;
+
+    margin-left: 20px;
+}
+
+
+/* Search Box */
+
+.navbar-search {
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 13px;
+
+    background: #ffffff;
+
+    border: 1px solid #dbe4ef;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(20, 60, 100, 0.06);
+
+    transition: 0.2s ease;
+}
+
+
+.navbar-search:focus-within {
+    border-color: #287be8;
+
+    box-shadow:
+        0 5px 18px rgba(40, 123, 232, 0.14);
+}
+
+
+/* Search Icon */
+
+.navbar-search > i {
+    flex-shrink: 0;
+
+    margin-right: 9px;
+
+    color: #287be8;
+
+    font-size: 14px;
+}
+
+
+/* Input */
+
+.navbar-search input {
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #172b4d;
+
+    font-family: inherit;
+
+    font-size: 13px;
+}
+
+
+.navbar-search input::placeholder {
+    color: #7c8999;
+}
+
+
+/* =========================================
+   SEARCH RESULTS
+   ========================================= */
+
+.search-results {
+    position: absolute;
+
+    top: calc(100% + 8px);
+
+    left: 0;
+
+    width: 300px;
+
+    max-height: 350px;
+
+    overflow-y: auto;
+
+    padding: 7px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e7ef;
+
+    border-radius: 13px;
+
+    box-shadow:
+        0 15px 35px rgba(20, 50, 90, 0.15);
+
+    display: none;
+
+    z-index: 9999;
+}
+
+
+.search-results.show {
+    display: block;
+}
+
+
+/* Result Item */
+
+.search-result-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 11px;
+
+    border-radius: 9px;
+
+    color: #172b4d;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+
+.search-result-item:hover {
+    background: #f1f6fc;
+
+    color: #287be8;
+}
+
+
+/* Result Icon */
+
+.search-result-item i {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+
+    background: #eaf4ff;
+
+    color: #287be8;
+
+    font-size: 13px;
+}
+
+
+/* Result Text */
+
+.search-result-text {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.search-result-title {
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.search-result-description {
+    font-size: 11px;
+
+    color: #7b8794;
+}
+
+
+/* No Result */
+
+.search-no-result {
+    padding: 15px;
+
+    text-align: center;
+
+    color: #7b8794;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   MOBILE NAVBAR SEARCH
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .navbar-search {
+        width: 100%;
+
+        height: 44px;
+
+        margin: 10px 0;
+    }
+
+    .search-results {
+        width: 100%;
+
+        max-height: 280px;
+    }
+
+}
