@@ -1,7 +1,3 @@
-Haan. Maine tumhara GitHub repository check kiya. Current repo mein project **static HTML/CSS/JavaScript based BGIMT Academic Hub** hai, aur repo description abhi kaafi basic hai. ([GitHub][1])
-
-Tumhare project ke liye README ko professional but student-project friendly rakhna better rahega. **`README.md`** banao aur ye paste karo:
-
 # 🎓 BGIMT Academic Hub
 
 > A student-friendly academic resource website for BGIMT students.
